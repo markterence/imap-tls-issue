@@ -3,6 +3,8 @@ services:
     build: .
     volumes:
       - .:/app
-    env_file:
-      - .env
+    environment:
+      - MAIL_SERVER_HOST=${MAIL_SERVER_HOST}
+      - MAIL_USER=${MAIL_USER}
+      - MAIL_PASSWORD=${MAIL_PASSWORD}
     command: "node index.js"
