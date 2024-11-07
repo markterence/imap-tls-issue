@@ -3,5 +3,4 @@ RUN mkdir /app
 WORKDIR /app
 COPY package.json /app/.
 COPY . /app/
-
-RUN ["yarn" "install"]
+RUN yarn install --frozen-lockfile
