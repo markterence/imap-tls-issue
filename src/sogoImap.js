@@ -4,9 +4,9 @@ export const imapConfig = {
   host: process.env.MAIL_SERVER_HOST,
   port: 993, // IMAP port
   secure: true,
-  tls: {
-    rejectUnauthorized: false, // This line allows self-signed certificates
-    checkServerIdentity: () => null // This line bypasses hostname verification
+  tls: true,
+  tlsOptions: {
+    rejectUnauthorized: false,
   }
 };
 
