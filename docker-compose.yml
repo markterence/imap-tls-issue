@@ -4,6 +4,8 @@ services:
     volumes:
       - .:/app
     tty: true
+    env_file:
+      - .env
     environment:
       MAIL_SERVER_HOST: ${MAIL_SERVER_HOST}
       MAIL_USER: ${MAIL_USER}
