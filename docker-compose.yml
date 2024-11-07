@@ -8,3 +8,4 @@ services:
       - MAIL_USER=${MAIL_USER}
       - MAIL_PASSWORD=${MAIL_PASSWORD}
     command: "node index.js"
+    tty: true
