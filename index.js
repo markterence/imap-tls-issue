@@ -1,4 +1,4 @@
-import "dotenv";
+import 'dotenv/config'
 
 import * as sogoImap from './src/sogoImap.js';
 
